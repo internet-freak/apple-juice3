@@ -1,0 +1,22 @@
+import random
+randomNumber = random.randint(1,100)
+print('Hey , welcome to guessing game!')
+print('choose a number between 1 and 100')
+
+guessed=False
+while guessed==False:
+    NumberInput= int(input("Please enter your guess: "))
+
+    if NumberInput==randomNumber:
+        guessed = True
+        print("Congratulations ! You win")
+
+    elif NumberInput>randomNumber:
+        print("your guesse is lower,please try again")
+        
+
+    elif NumberInput<randomNumber:
+        print("your guesse is higher, please try again")
+        
+
+print("End of the game")
